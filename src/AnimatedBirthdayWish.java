@@ -20,18 +20,18 @@ public class AnimatedBirthdayWish extends Application {
     @Override
     public void start(Stage primaryStage) {
         // *Load the AI-generated Background*
-        Image backgroundImage = new Image("file:/C:/Users/Abbas/Pictures/Camera Roll/WhatsApp Image 2024-08-23 at 17.08.23_4b643b9f.jpg");
+        Image backgroundImage = new Image("file:Your own pic");
         ImageView backgroundView = new ImageView(backgroundImage);
         backgroundView.setFitWidth(800);
         backgroundView.setFitHeight(600);
         //
 
         // *Load Your Image*
-        Image yourImage = new Image("file:/C:/Users/Abbas/Pictures/Camera Roll/abbas.jpg");
+        Image yourImage = new Image("file:/C:your own pic");
         ImageView imageView = new ImageView(yourImage);
         imageView.setFitHeight(400);
         imageView.setFitWidth(325);
-        Text nameText = new Text("HAPPY BIRTHDAY DEAR \n ABBAS SADIQ");
+        Text nameText = new Text("HAPPY BIRTHDAY DEAR \n Name");
         nameText.setFont(Font.font("time new roman", 50)); // Stylish font
         nameText.setStyle("-fx-font-weight: bold; -fx-fill: linear-gradient(to right, #ff7f50, #ff6347, #ff4500);");
 
@@ -54,7 +54,7 @@ public class AnimatedBirthdayWish extends Application {
         // *Scene and Stage Setup*
         Scene scene = new Scene(stackPane, 800, 600);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Happy Birthday, Abbas Sadiq!");
+        primaryStage.setTitle("Happy Birthday, Your Name!");
         primaryStage.show();
     }
 
